@@ -10,7 +10,7 @@ upSide = numpy.array([100, 100, 255])
 result = numpy.copy(defaultImage) * 0
 mask = cv2.inRange(defaultImage, lowSide, upSide)
 cv2.imshow('mask image', mask)
-cv2.imshow('zero ia=mge', result)
+cv2.imshow('zero image', result)
 
 rho = 1  # разрешение расстояния в пикселях сетки Хафа
 theta = numpy.pi / 180  # угловое разрешение в радианах сетки Хафа
