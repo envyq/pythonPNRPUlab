@@ -27,8 +27,8 @@ for image_line in image_lines:
         length = math.sqrt(math.pow(int(x2) - int(x1), 2) + math.pow(int(y2) - int(y1), 2))
         if length > _length: _length, _x1, _y1, _x2, _y2 = length, x1, y1, x2, y2
 
-cv2.line(result, (_x1, _y1), (_x2, _y2), (255, 0, 0), 5)
-destination = cv2.resize(result, (500, 500))
+destination = cv2.line(result, (_x1, _y1), (_x2, _y2), (255, 0, 0), 5)
+
 
 # Вычисляем уравнение прямой
 k = (_y1 - _y2) / (_x1 - _x2)
